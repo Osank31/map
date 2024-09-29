@@ -1,4 +1,4 @@
-console.log("hello");
+// console.log("hello");
 
 const socket = io("https://map-backend-knsb.onrender.com");
 
@@ -35,7 +35,7 @@ if (navigator.geolocation) {
     );
 
     socket.on("recieve_location", (data) => {
-        console.log("Received location data:", data);
+        // console.log("Received location data:", data);
         data.forEach(userData => {
             const { socketId, latitude, longitude } = userData;
 
